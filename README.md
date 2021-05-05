@@ -1,6 +1,8 @@
 ## destructo
 
+[![Build Status](https://travis-ci.com/osakpolor-onaiwu/destructo.svg?branch=main)](https://travis-ci.com/osakpolor-onaiwu/destructo)
   
+[![Coverage Status](https://coveralls.io/repos/github/osakpolor-onaiwu/destructo/badge.svg?branch=main)](https://coveralls.io/github/osakpolor-onaiwu/destructo?branch=main)
 
 npm install destructo
 
