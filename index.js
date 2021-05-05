@@ -1,6 +1,10 @@
-const destructo = require('./lib/main.js');
+const compact = require('./lib/main.js');
+const expect = require('./lib/expect')
 
-var destruct = {};
+const destructo = {
+    expects:expect,
+    compact:compact
+};
 
-destruct.expect = destructo;
-module.exports = destruct.expect;
+
+module.exports = destructo;
