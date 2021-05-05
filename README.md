@@ -11,7 +11,7 @@ There are two methods in this package
 1. compact
 2. expects
 
-1.**compact**
+1.**compact:**
 It accepts 3 arguments.
 
 -  **func**: This is the function you want to run the test on.
@@ -20,7 +20,7 @@ It accepts 3 arguments.
 
 -  **returns**: Here you state the datatype you expect the function to return. e.g string, number, object, array and boolean.
 
-2.**expects**
+2.**expects:**
 When using this method, you chain the function together
 
   Example
