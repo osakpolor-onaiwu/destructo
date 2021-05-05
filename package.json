@@ -1,0 +1,33 @@
+{
+  "name": "destructo",
+  "version": "1.0.0",
+  "description": "A package for running destructive tests on functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=lcov --reporter=text mocha",
+    "coverage": "nyc npm run test && nyc report --reporter=text-lcov --reporter=lcov | node ./node_modules/coveralls/bin/coveralls.js --verbose"
+  },
+  "keywords": [
+    "destructive",
+    "test",
+    "engine",
+    "negative test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osakpolor-onaiwu/destructo.git"
+  },
+  "author": "osakpolor onaiwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osakpolor-onaiwu/destructo/issues"
+  },
+  "homepage": "https://github.com/osakpolor-onaiwu/destructo#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "coveralls": "^3.1.0",
+    "mocha": "^8.3.2",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^15.1.0"
+  }
+}
