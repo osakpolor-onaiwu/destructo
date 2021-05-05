@@ -1,9 +1,9 @@
-## destructo
+## destructos
 
 [![Build Status](https://travis-ci.com/osakpolor-onaiwu/destructo.svg?branch=main)](https://travis-ci.com/osakpolor-onaiwu/destructo)
   
 
-npm install destructo
+npm install destructos
 
   
 
