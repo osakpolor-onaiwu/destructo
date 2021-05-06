@@ -1,6 +1,6 @@
 {
-  "name": "destructo",
-  "version": "1.0.0",
+  "name": "destructos",
+  "version": "1.0.1",
   "description": "A package for running destructive tests on functions",
   "main": "index.js",
   "scripts": {

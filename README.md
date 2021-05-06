@@ -1,18 +1,13 @@
 ## destructos
-
 [![Build Status](https://travis-ci.com/osakpolor-onaiwu/destructo.svg?branch=main)](https://travis-ci.com/osakpolor-onaiwu/destructo)
   
-
-npm install destructos
-
-  
-
 ### This Package is for running destructive/ negative tests on your functions
 There are two methods in this package
 1. compact
 2. expects
 
 1.**compact:**
+
 It accepts 3 arguments.
 
 -  **func**: This is the function you want to run the test on.
@@ -22,31 +17,35 @@ It accepts 3 arguments.
 -  **returns**: Here you state the datatype you expect the function to return. e.g string, number, object, array and boolean.
 
 2.**expects:**
-When using this method, you chain the function together
 
-  Example
+When using this method, you chain the function together. There are three methods you chain together.
+- **Function:** Here you supply the function to test as an argument.
+- **Accept:** You suplly the arguments of the function you want to test and their datatypes as an object to the Accept method.
+- **Returns:** here you supply the datatype you expect the function you are testing to return.
 
-let's assume you want to test this function called add. The add function accepts three arguments a,b and c, and returns a number.  a , b  and c accepts a number datatypes.
+Example
+
+let's assume you want to test this function called add. The add function accepts three arguments a,b and c, and returns a number.  a , b  and c accepts number datatypes.
 
 ```javascript
 function add(a,b,c) {
 	if(a<b){
 	throw `a is smaller than b`
-	};
+	}
 	return a + b * c;
 }
 ```
 
 To test it using the compact method, do
 ``` javascript
-const {compact} = require('destructo')
+const {compact} = require('destructos')
 const  test = compact(add,{a:'number',b:'number',c:'number'},'number')
 console.log(test)
 ```
 
 To test it using the expects method, do
 ```javascript
-const {expects} = require('destructo')
+const {expects} = require('destructos')
 const test = expects.Function(add).Accept({a:'number',b:'number',c:'number'}).Returns('string');
 console.log(test)
 ```
